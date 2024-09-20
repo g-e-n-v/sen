@@ -1,12 +1,24 @@
 {
-  "name": "sen",
+  "name": "@genv/sen",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Luc Le <trungluc.dev@gmail.com>",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.0"
+  }
 }
