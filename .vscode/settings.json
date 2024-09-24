@@ -4,5 +4,7 @@
       "mode": "auto"
     }
   ],
-  "cSpell.words": ["genv", "tseslint", "tsup"]
+  "cSpell.words": ["genv", "tseslint", "tsup"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "zencoder.enableRepoIndexing": true
 }

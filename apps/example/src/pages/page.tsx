@@ -1,7 +1,9 @@
-import { sum } from "@genv/sen";
+const source = import.meta.url;
 
 export default function HomePage() {
-  const a = sum(3, 4);
-
-  return <div>HomePage {a}</div>;
+  return (
+    <div>
+      <div className="p-1">{source}</div>
+    </div>
+  );
 }

@@ -2,10 +2,17 @@
   "compilerOptions": {
     "outDir": "./dist",
     "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "declaration": true,
     "skipLibCheck": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["vite/client"]
   },
   "exclude": ["dist", "node_modules"]
 }

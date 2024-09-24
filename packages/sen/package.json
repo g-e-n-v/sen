@@ -16,9 +16,19 @@
       "import": "./dist/main.js",
       "require": "./dist/main.cjs"
     },
-    "./package.json": "./package.json"
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "import": "./dist/plugin.js",
+      "require": "./dist/plugin.cjs"
+    }
   },
   "devDependencies": {
+    "@types/react": "^18.3.8",
     "tsup": "^8.3.0"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-router-dom": ">=6",
+    "vite": ">=4"
   }
 }
